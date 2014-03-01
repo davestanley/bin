@@ -1,18 +1,12 @@
 
 
-#rsync -avrin --delete-after ${src} ${dest} > rsync1.out
-
 flags="-avri --delete-after"
-#src=/media/davestanley/ALGONQUIN/Backup/
-#dest=~/
-
+dest=~/media/ALGONQUIN/Backup/
 src=~/
-dest=/media/davestanley/ALGONQUIN/Backup/
 
-
-rsync $flags ${src}Ubuntu\ One ${dest} > ~/rsync_key.out
-rsync $flags ${src}Dropbox ${dest} >> ~/rsync_key.out
-rsync $flags ${src}Other ${dest} >> ~/rsync_key.out
+#rsync $flags ${src}Ubuntu\ One ${dest} > ~/rsync_key.out
+#rsync $flags ${src}Dropbox ${dest} >> ~/rsync_key.out
+rsync $flags ${src}Other ${dest} > ~/rsync_key.out
 
 rsync $flags ${src}Anco ${dest} >> ~/rsync_key.out
 rsync $flags ${src}From\ pop ${dest} >> ~/rsync_key.out
