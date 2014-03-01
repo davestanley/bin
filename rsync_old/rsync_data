@@ -1,0 +1,23 @@
+
+src='/home/davestanley/'
+dest='/media/davestanley/ALGONQUIN/Backup/'
+#dest='/media/davestanley/CALCUTTA/Backup/'
+
+rsync_flags='-avri --delete-after'
+#rsync_flags='-avri --delete-after' --status --progress
+#				Shows additional information on file
+#				transfer times. Useful for large files.
+
+echo sudo rsync $rsync_flags ${src}Anco $dest >> ~/rsync_data.out
+sudo rsync $rsync_flags ${src}Anco $dest >> ~/rsync_data.out
+
+echo sudo rsync $rsync_flags ${src}Nex  $dest >> ~/rsync_data.out
+sudo rsync $rsync_flags ${src}Nex  $dest >> ~/rsync_data.out
+
+echo sudo rsync $rsync_flags ${src}Raw  $dest >> ~/rsync_data.out
+sudo rsync $rsync_flags ${src}Raw  $dest >> ~/rsync_data.out
+
+echo sudo rsync $rsync_flags ${src}Home_new  $dest >> ~/rsync_data.out
+sudo rsync $rsync_flags ${src}Home_new  $dest >> ~/rsync_data.out
+
+

@@ -1,0 +1,8 @@
+# Copies Miller data over to the SCC cluster's project folder
+source=/media/davestanley/Dave/Users/Computer/data/roy/CRC_Miller_data
+source=/media/davestanley/Dave/Users/Computer/data/roy/new_ctgX_files
+dest=stanleyd@scc4.bu.edu:/project/crc-nak/roy/
+
+rsync -avri -z --stats --progress $source $dest
+#  z option adds compression
+

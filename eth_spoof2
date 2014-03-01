@@ -1,0 +1,5 @@
+ifconfig eth0 | grep eth0
+sudo ifconfig eth0 hw ether 00:12:3F:5C:B9:A1
+ifconfig eth0 | grep eth0
+
+

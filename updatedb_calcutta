@@ -1,0 +1,4 @@
+
+mountpoint='/media/davestanley/CALCUTTA'
+label=CALCUTTA
+updatedb -U $mountpoint -o $HOME/.locatedbs/$label

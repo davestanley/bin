@@ -1,0 +1,3 @@
+label=CALCUTTA
+pattern=$1
+locate -d $HOME/.locatedbs/$label $pattern

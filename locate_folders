@@ -1,0 +1,11 @@
+#sudo strings /var/lib/mlocate/mlocate.db | grep -E '^/.*Nex'
+#sudo strings /var/lib/mlocate/mlocate.db | grep -E $1
+
+#Usage locate_folders.sh "folder name"
+# Note it's okay to use spaces due to quotes
+
+sudo strings /var/lib/mlocate/mlocate.db | grep -i --color -E "^/.*${1}"
+sudo strings ~/.locatedbs/CALCUTTA | grep -i --color -E "^/.*${1}"
+
+
+#sudo strings ~/.locatedbs/CALCUTTA | grep -E $1
