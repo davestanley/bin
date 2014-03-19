@@ -1,6 +1,6 @@
 
 
-local=$HOME
+local=$HOME/davearthur.stanley@gmail.com
 syncfolder="16giganator"
 directionality=$1
 use_scc=$2
