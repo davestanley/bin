@@ -1,6 +1,6 @@
 
 
-local=$HOME/davearthur.stanley@gmail.com
+local=$HOME/Gdrive
 syncfolder="16giganator"
 directionality=$1
 use_scc=$2
