@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# This script gets NetworkManager out of suspend.
+# To resume type network-manager-resume resume
+case $1 in
+     suspend|suspend_hybrid|hibernate)
+    # No need to do anything here.
+        ;;
+     resume|thaw)
+    nmcli nm sleep false
+        ;;
+esac
+
