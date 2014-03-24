@@ -1,0 +1,26 @@
+options=$1
+	# options:
+	# 1 = thinkpad T43
+	# 2 = Macbook Pro / Thinkpad T61
+	# 3 = External monitor
+
+# ratio=$2
+	# Ratio (not used right now)
+	# 1 = 4:3 (standard)
+	# 2 = 8:5 (widescreen)
+
+if [ $options = 1 ]
+then
+	vncstart -geometry 980x730
+fi
+if [ $options = 2 ]
+then
+	vncstart -geometry 1420x870
+fi
+if [ $options = 3 ]
+then
+	vncstart -geometry 980x730
+fi
+
+
+

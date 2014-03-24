@@ -9,7 +9,7 @@ dest=~/bin
 mkdir $dest 2> /dev/null
 
 
-# softlink home folder dotfiles
+# softlink bin files
 files="${dir}/*"
 for file in $files; do
 
