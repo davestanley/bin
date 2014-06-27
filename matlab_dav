@@ -1,0 +1,6 @@
+
+pushd /home/usr/Matlab2010
+etc/lmstart
+bin/matlab "$@"
+etc/lmdown
+popd
