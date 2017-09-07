@@ -24,7 +24,7 @@ fi
 
 if [ $options = 3 ]
 then
-	vncstart -geometry 1420x870
+	vncstart -geometry 1870x1030
 fi
 
 if [ $options = 4 ]
