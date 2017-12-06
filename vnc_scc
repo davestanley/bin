@@ -6,6 +6,7 @@ options=$1
 	# 4 = Thinkpad T61
 	# 5 = External monitor DELL
 	# 6 = Large Samsung 8:5 (widescreen)
+	# 7 = External monitor DELL pair
 
 # ratio=$2
 	# Ratio (not used right now)
@@ -40,6 +41,11 @@ fi
 if [ $options = 6 ]
 then
 	vncstart -geometry 1920x1200
+fi
+
+if [ $options = 7 ]
+then
+	vncstart -geometry 2520x980
 fi
 
 
