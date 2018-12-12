@@ -1,0 +1,5 @@
+# Alias for running command git log -p <revision> <path>, where path points to the kramer.m file.
+# Useful for identifying changes to the model inbetween 2 tags
+
+git log -p $1 $2 kramer_IB/kramer_IB.m
+
